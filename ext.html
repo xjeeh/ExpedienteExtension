@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Calculadora de Expediente</title>
+    <style>
+        span,
+        span p,
+        span input {
+            float: left;
+        }
+
+        span {
+            margin-bottom: 3px;
+        }
+
+        p {
+            width: 100%;
+            margin: 0px;
+        }
+
+        input {
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: .25rem;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #left {
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        <p>Entrada</p>
+        <input type="time" id="entry">
+    </span>
+    <span>
+        <p>Saida</p>
+        <input type="time" disabled id="finish">
+    </span>
+    <span>
+        <p>Restante</p>
+        <span id="left"></span>
+    </span>
+</body>
+
+<script type="text/javascript" src="moment.js"></script>
+<script type="text/javascript" src="ext.js"></script>
+
+</html>
